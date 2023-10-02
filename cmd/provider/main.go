@@ -33,7 +33,7 @@ import (
 	"github.com/Jiraiya106/provider-github/internal/features"
 )
 
-func main() {
+func main() {	
 	var (
 		app              = kingpin.New(filepath.Base(os.Args[0]), "Terraform based Crossplane provider for Github").DefaultEnvars()
 		debug            = app.Flag("debug", "Run with debug logging.").Short('d').Bool()

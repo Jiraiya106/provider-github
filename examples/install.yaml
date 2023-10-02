@@ -3,4 +3,6 @@ kind: Provider
 metadata:
   name: provider-github
 spec:
-  package: Jiraiya106/provider-github:v0.1.0
+  package: gitlab.msp.komus.net:5050/ars/images/infra/provider-github:latest
+  packagePullSecrets: 
+  - name: gitlab-credentials

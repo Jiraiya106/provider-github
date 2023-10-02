@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: provider
+  namespace: crossplane-system
+spec:
+  containers:
+  - name: provider
+    image: gitlab.msp.komus.net:5050/ars/images/infra/provider-github:latest
+  imagePullSecrets:
+  - name: gitlab-credentials

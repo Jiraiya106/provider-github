@@ -4,7 +4,7 @@
 PROJECT_NAME ?= provider-github
 PROJECT_REPO ?= github.com/Jiraiya106/$(PROJECT_NAME)
 
-export TERRAFORM_VERSION ?= 1.2.1
+export TERRAFORM_VERSION ?= 1.3.7
 
 export TERRAFORM_PROVIDER_SOURCE ?= integrations/github
 export TERRAFORM_PROVIDER_REPO ?= https://github.com/integrations/terraform-provider-github
@@ -15,7 +15,7 @@ export TERRAFORM_NATIVE_PROVIDER_BINARY ?= terraform-provider-github_v5.5.0_x5
 export TERRAFORM_DOCS_PATH ?= website/docs/r
 
 
-PLATFORMS ?= linux_amd64 linux_arm64
+PLATFORMS ?= linux_amd64
 
 # -include will silently skip missing files, which allows us
 # to load those files with a target in the Makefile. If only
